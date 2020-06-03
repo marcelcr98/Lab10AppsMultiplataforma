@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Lab10.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"></Setter>
+                <Setter Property="VerticalOptions" Value="Center"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="ViewToView" x:Name="btnView" Clicked="btnView_Clicked"></Button>
+            <Button Text="BindingMode" x:Name="btnBinding" Clicked="btnBinding_Clicked"></Button>
+            <Button Text="ListView" x:Name="btnListView" Clicked="btnListView_Clicked"></Button>
+            <Button Text="Picker" x:Name="btnPicker" Clicked="btnPicker_Clicked"></Button>
+            <Button Text="Async" x:Name="btnTestAsync" Clicked="btnTestAsync_Clicked"></Button>
+            <Label Text="Async" x:Name="lblAsync"></Label>
+            <Button Text="Sync" x:Name="btnTestSync" Clicked="btnTestSync_Clicked"></Button>
+            <Label Text="Sync" x:Name="lblSync"></Label>
+            <Button Text="Show Alert" x:Name="btnShowAlert" Clicked="btnShowAlert_Clicked"></Button>
+        </StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>
